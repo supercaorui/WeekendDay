@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.administrator.weekendday.activitys.AtyHeader">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_star"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/star"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/search"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_person"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/person"
+            android:button="@null" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

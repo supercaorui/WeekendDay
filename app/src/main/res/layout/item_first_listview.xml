@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/first_item_img"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="250dp" />
+    <TextView
+
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_item_name"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+
+        android:layout_below="@id/first_item_img"/>
+    <TextView
+        android:layout_marginLeft="15dp"
+
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_item_detail"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colortext"
+        android:layout_below="@id/first_item_name"/>
+    <Button
+        android:id="@+id/first_item_deadline"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:enabled="false"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:textColor="@color/colortext"
+        android:background="@drawable/abc_mtrl_mult"
+        android:layout_below="@id/first_item_detail"/>
+    <Button
+        android:paddingLeft="10dp"
+        android:id="@+id/first_item_collect"
+
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/first_item_detail"
+        android:layout_toRightOf="@id/first_item_deadline"
+        android:textColor="@color/colortext"
+        android:enabled="false"
+        android:gravity="center"
+        android:background="@drawable/abc_mtrl_mult"
+        android:drawableLeft="@drawable/ic_nav_black_heart_off_small"
+        />
+    <Button
+        android:id="@+id/first_item_price"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colortext"
+        android:drawableLeft="@drawable/ic_pay"
+        android:background="@drawable/abc_mtrl_mult"
+        android:layout_below="@id/first_item_detail"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colortext"></LinearLayout>
+</LinearLayout>
